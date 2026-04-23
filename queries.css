@@ -272,7 +272,7 @@
     .square4 {
         width: 100%;
         height: 2.25em;
-        padding: 0em 0 .5em 0;
+        padding: 0em 0 .5em .5em;
     }
     .square1 a{
         font-size: .75em;
