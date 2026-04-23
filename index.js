@@ -86,7 +86,7 @@ const translations = {
     "nav-about":        "about",
     "nav-works":        "works",
     "nav-support":      "donate",
-    "nav-calendar":     "calendar",
+    "nav-calendar":     "activities",
     "nav-lang":         "fr",
 
     // --- FOOTER ---
@@ -116,7 +116,7 @@ const translations = {
     "choreo-limbic-title":   "limbic cum rag",
     "choreo-limbic-desc":    "Explores the performer's body as a site of projection - literally and figuratively.",
     "choreo-flesh-title":    "Flesh-Nexus, Human Sword",
-    "choreo-flesh-desc":     "AI-generated scores reimagine the space between us as a virtual \"social fascia\" - dancing in the perverse threshold between physical and digital entanglement.",
+    "choreo-flesh-desc":     "AI-generated scores reimagine the space between us as a \"virtual social fascia\".",
     "choreo-studies-title":  "Studies in Virtuality",
     "choreo-studies-desc":   "A collaborative multimedia project experimenting with forms of simulation.",
     "choreo-paradise-title": "Paradise",
@@ -166,7 +166,7 @@ const translations = {
     "paradise-p2":            "Research Collaborators:",
 
     // --- CALENDAR PAGE ---
-    "cal-header":               "Calendar",
+    "cal-header":               "Activities",
 
     // --- SUPPORT PAGE ---
     "support-header-funding":   "Project Funding",
@@ -182,7 +182,7 @@ const translations = {
     "nav-about":        "à propos",
     "nav-works":        "œuvres",
     "nav-support":      "don",
-    "nav-calendar":     "calendrier",
+    "nav-calendar":     "activités",
     "nav-lang":         "en",
 
     // --- FOOTER ---
@@ -212,7 +212,7 @@ const translations = {
     "choreo-limbic-title":   "limbic cum rag",
     "choreo-limbic-desc":    "Explore le corps du performeur comme site de projection — littéralement et figurativement.",
     "choreo-flesh-title":    "Flesh-Nexus, Human Sword",
-    "choreo-flesh-desc":     "Des partitions générées par IA réimaginent l'espace entre nous comme un « fascia social virtuel » — dansant dans le seuil pervers entre l'enchevêtrement physique et numérique.",
+    "choreo-flesh-desc":     "Des partitions générées par IA réimaginent l'espace entre nous comme un « fascia social virtuel ».",
     "choreo-studies-title":  "Études en Virtualité",
     "choreo-studies-desc":   "Un projet multimédia collaboratif expérimentant avec de la simulation.",
     "choreo-paradise-title": "Paradis",
@@ -262,7 +262,7 @@ const translations = {
     "paradise-p2":            "Collaborateurs de recherche :",
 
     // --- CALENDAR PAGE ---
-    "cal-header":               "Calendrier",
+    "cal-header":               "Activités",
 
     // --- SUPPORT PAGE ---
     "support-header-funding":   "Financement de projets",

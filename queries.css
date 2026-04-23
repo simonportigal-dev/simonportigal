@@ -262,6 +262,10 @@
 
 
     /* --- FOOTER --- */
+
+    .footer{
+        padding-bottom: .25em;
+    }
     .squares {
         flex-direction: column;
     }
@@ -280,7 +284,7 @@
 
     .donate-btn{
         top: auto;
-        bottom: 2em;
+        bottom: 1.75em;
         right: 0;
     }
 
