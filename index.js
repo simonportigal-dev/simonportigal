@@ -147,10 +147,10 @@ const translations = {
     // --- FLESH-NEXUS ---
     "flesh-header":           "Flesh-Nexus, Human Sword (wip)",
     "flesh-body-header":      "Blending digital logic into somatic practice, Flesh-Nexus, Human Sword uses AI-generated movement scores and meditations to explore interconnectedness, collective movement, and reimagining the space between us as a \"virtual social fascia\" - dancing in the perverse threshold between physical and digital entanglement.",
-    "flesh-p1":               "Direction, Choreography: Simon Portigal",
-    "flesh-p2":               "Creative Collaboration/Outside-eye: Katie Ward",
+    "flesh-p1":               "*In development",
+    // "flesh-p2":               "Creative Collaboration/Outside-eye: Katie Ward",
     // "flesh-p3":               "Dramaturgy/Sound Consultation: Jassem Hindi",
-    "flesh-p4":               "Interpreters:",
+    // "flesh-p4":               "Interpreters:",
 
     // --- STUDIES IN VIRTUALITY ---
     "studies-header":         "Studies in Virtuality (wip)",
@@ -243,10 +243,10 @@ const translations = {
     // --- FLESH-NEXUS ---
     "flesh-header":           "Flesh-Nexus, Human Sword (wip)",
     "flesh-body-header":      "En intégrant la logique numérique à la pratique somatique, Flesh-Nexus, Human Sword utilise des partitions de mouvement et des méditations générées par IA pour explorer l'interconnexion, le mouvement collectif, et la réimagination de l'espace entre nous comme un « fascia social virtuel » — dansant dans le seuil pervers entre l'enchevêtrement physique et numérique.",
-    "flesh-p1":               "Direction, chorégraphie : Simon Portigal",
-    "flesh-p2":               "Collaboration créative/regard extérieur : Katie Ward",
+    "flesh-p1":               "*En développement",
+    // "flesh-p2":               "Collaboration créative/regard extérieur : Katie Ward",
     // "flesh-p3":               "Dramaturgie/consultation sonore : Jassem Hindi",
-    "flesh-p4":               "Interprètes :",
+    // "flesh-p4":               "Interprètes :",
 
     // --- STUDIES IN VIRTUALITY ---
     "studies-header":         "Études en Virtualité (wip)",
