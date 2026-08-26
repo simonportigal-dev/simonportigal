@@ -1,40 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Portigal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="queries.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>a.simonportigal</title>
+  <link rel="icon" type="image/svg+xml" href="images/bumA.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
 </head>
+<body>
+  <header class="site-header">
+    <img class="logo" src="images/bumA.svg" alt="" />
 
+    <nav class="site-nav" aria-label="Main">
+      <div class="site-nav__links">
+        <a href="#projects" data-i18n="projects">Projects</a>
+        <a href="#info" data-i18n="info">Info</a>
+        <a href="#contact" data-i18n="contact">Contact</a>
+        <a href="#support" data-i18n="support">Support</a>
+      </div>
+      <a href="#" id="lang-toggle" class="site-nav__lang">FR</a>
+    </nav>
+  </header>
 
+  <main class="site-main">
+    <a class="project-tile" href="#">
+      <img
+        class="project-tile__photo"
+        src="images/aattitlenyc copy - 600px.jpeg"
+        alt="Performer holding a cardboard box above their butt during a dance performance"
+        data-i18n-alt="hero"
+      />
+    </a>
+  </main>
 
-<body class="i_body">
+  <section class="projects">
+    <h2 class="projects__heading sr-only" data-i18n="projects">Projects</h2>
 
-<div class="MAIN">
-    <section class="main1">
+    <div id="projects" class="projects__table-wrap">
+      <table class="projects__table">
+        <colgroup>
+          <col class="role" />
+          <col class="title" />
+          <col class="artist" />
+          <col class="location" />
+          <col class="year" />
+        </colgroup>
+        <thead class="sr-only">
+          <tr>
+            <th data-i18n="table.role">Role</th>
+            <th data-i18n="table.project">Project</th>
+            <th data-i18n="table.artist">Artist</th>
+            <th data-i18n="table.location">Location</th>
+            <th data-i18n="table.year">Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tour Management</td>
+            <td>Dog Rising</td>
+            <td>Clara Furey/Bent Hollow</td>
+            <td>Hong Kong</td>
+            <td>2026</td>
+          </tr>
+          <tr>
+            <td>Production</td>
+            <td>You Cannot Can</td>
+            <td>Dana Michel/Scorp Corps</td>
+            <td>Montréal</td>
+            <td>2026</td>
+          </tr>
+          <tr>
+            <td>Residency</td>
+            <td>Studies in Virtuality</td>
+            <td>Simon Portigal</td>
+            <td>Montréal: Studio 303</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Interpretation</td>
+            <td>Laundry of Legends II</td>
+            <td>Jassem Hindi</td>
+            <td>Montréal</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Residency</td>
+            <td>Studies in Virtuality</td>
+            <td>Simon Portigal</td>
+            <td>Montréal: Parbleux</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Tour Management</td>
+            <td>Dog Rising + Unarmoured</td>
+            <td>Clara Furey/Bent Hollow</td>
+            <td>Sofia + Vienna</td>
+            <td>2024</td>
+          </tr>
+          <tr>
+            <td>Rehearsal Direction</td>
+            <td>Unarmoured</td>
+            <td>Clara Furey/Bent Hollow</td>
+            <td>Montréal</td>
+            <td>2024</td>
+          </tr>
+          <tr>
+            <td>Interpretation</td>
+            <td>Laundry of Legends II</td>
+            <td>Jassem Hindi</td>
+            <td>Montréal</td>
+            <td>2023</td>
+          </tr>
+          <tr>
+            <td>Tour Management</td>
+            <td>Dog Rising</td>
+            <td>Clara Furey/Bent Hollow</td>
+            <td>Québec</td>
+            <td>2023</td>
+          </tr>
+          <tr>
+            <td>Interpretation</td>
+            <td>Miracleing</td>
+            <td>Sasha Kleinplatz</td>
+            <td>Montréal</td>
+            <td>2022</td>
+          </tr>
+          <tr class="is-featured">
+            <td><a href="#" data-modal="fragile-modal">Choreography</a></td>
+            <td><a href="#" data-modal="fragile-modal">fragile &amp; useless</a></td>
+            <td><a href="#" data-modal="fragile-modal">Simon Portigal</a></td>
+            <td><a href="#" data-modal="fragile-modal">Montréal</a></td>
+            <td><a href="#" data-modal="fragile-modal">2022</a></td>
+          </tr>
+          <tr>
+            <td>Consultation</td>
+            <td>Leaky Immediations</td>
+            <td>Lara Oundjian</td>
+            <td>Montréal</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>Consultation</td>
+            <td>grindruberairbnb.exposed</td>
+            <td>Jonathan Chomko</td>
+            <td>Montréal</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>Interpretation</td>
+            <td>Two Planets Have Been Colliding for Thousands of Years</td>
+            <td>Dora Garcia</td>
+            <td>Montréal</td>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <td>Consultation</td>
+            <td>Ugly Feelings</td>
+            <td>Caroline Gravel</td>
+            <td>Montréal</td>
+            <td>2021</td>
+          </tr>
+           <tr>
+            <td>Research</td>
+            <td>Creation/Destruction</td>
+            <td>Dana Gingras</td>
+            <td>Montréal</td>
+            <td>2020</td>
+          </tr>
+          <tr class="is-featured">
+            <td><a href="#" data-modal="limbic-modal">Choreography</a></td>
+            <td><a href="#" data-modal="limbic-modal">limbic cum rag</a></td>
+            <td><a href="#" data-modal="limbic-modal">Simon Portigal</a></td>
+            <td><a href="#" data-modal="limbic-modal">Montréal</a></td>
+            <td><a href="#" data-modal="limbic-modal">2019</a></td>
+          </tr>
+          <tr>
+            <td>Consultation</td>
+            <td>SOFTLAMP.autonomies</td>
+            <td>Ellen Furey + Malik Nashad-Sharpe</td>
+            <td>Montréal</td>
+            <td>2019</td>
+          </tr>
+          <tr class="is-featured">
+            <td><a href="#" data-modal="limbic-modal">Choreography</a></td>
+            <td><a href="#" data-modal="limbic-modal">limbic cum rag</a></td>
+            <td><a href="#" data-modal="limbic-modal">Simon Portigal</a></td>
+            <td><a href="#" data-modal="limbic-modal">Montréal + New York</a></td>
+            <td><a href="#" data-modal="limbic-modal">2018</a></td>
+          </tr>
+           <tr>
+            <td>Research</td>
+            <td>Suite Canadienne, a demonstration</td>
+            <td>Adam Kinner</td>
+            <td>Montréal</td>
+            <td>2018</td>
+          </tr>
+           <tr>
+            <td>Research</td>
+            <td>Fluid Grounds</td>
+            <td>Benoit Lachambre</td>
+            <td>Montréal</td>
+            <td>2018</td>
+          </tr>
+          <tr class="is-featured">
+            <td><a href="#" data-modal="limbic-modal">Choreography</a></td>
+            <td><a href="#" data-modal="limbic-modal">limbic cum rag</a></td>
+            <td><a href="#" data-modal="limbic-modal">Simon Portigal</a></td>
+            <td><a href="#" data-modal="limbic-modal">Montréal</a></td>
+            <td><a href="#" data-modal="limbic-modal">2017</a></td>
+          </tr>
+          <tr>
+            <td>Interpretation</td>
+            <td>Cosmic Love</td>
+            <td>Clara Furey</td>
+            <td>Montréal</td>
+            <td>2017</td>
+          </tr>
+          <tr>
+            <td>Interpretation</td>
+            <td>Make Banana Cry</td>
+            <td>Andrew Tay + Stephen Thompson</td>
+            <td>Montréal</td>
+            <td>2017</td>
+          </tr>
+          <tr>
+            <td>Interpretation</td>
+            <td>Holding Still, Holding Together</td>
+            <td>Annie Macdonell</td>
+            <td>Toronto</td>
+            <td>2017</td>
+          </tr>
+           <tr>
+            <td>Interpretation</td>
+            <td>Out of Season</td>
+            <td>Ame Henderson/Public Recordings + Matija Ferlin</td>
+            <td>Montréal</td>
+            <td>2017</td>
+          </tr>
+          <tr>
+            <td>Choreography</td>
+            <td>Aattitle</td>
+            <td>Simon Portigal</td>
+            <td>Toronto</td>
+            <td>2016</td>
+          </tr>
+           <td>Interpretation</td>
+            <td>Lift That Up</td>
+            <td>Dana Michel + Dancemakers</td>
+            <td>Toronto</td>
+            <td>2016</td>
+          </tr>
+          <tr>
+            <td>Choreography</td>
+            <td>Mourning Dance</td>
+            <td>Simon Portigal</td>
+            <td>Montréal</td>
+            <td>2016</td>
+          </tr>
+          <tr>
+            <td>Choreography</td>
+            <td>Public Studies Leading Elsewhere</td>
+            <td>Simon Portigal</td>
+            <td>Toronto</td>
+            <td>2016</td>
+          </tr>
+          <tr>
+            <td>Interpretation</td>
+            <td>Taking It To The Grave</td>
+            <td>Eroca Nicols</td>
+            <td>Winnipeg</td>
+            <td>2016</td>
+          </tr>
+          <tr>
+            <td>Interpretation</td>
+            <td>Traditional Dance</td>
+            <td>Amelia Ehrhardt</td>
+            <td>Montréal</td>
+            <td>2016</td>
+          </tr>
+          <tr>
+            <td>Collaboration + Interpretation</td>
+            <td>Performance with Jersusalem in my Heart</td>
+            <td>Radwan Moumneh/Jerusalem in my Heart</td>
+            <td>Montréal</td>
+            <td>2016</td>
+          </tr>
+            <tr>
+            <td>Choreography</td>
+            <td>USER|FRIENDLY</td>
+            <td>Simon Portigal</td>
+            <td>Toronto</td>
+            <td>2015</td>
+          </tr>
+           <tr>
+            <td>Research</td>
+            <td>What It's Like</td>
+            <td>Heidi Strauss/Adelheid</td>
+            <td>Montréal</td>
+            <td>2015</td>
+          </tr>
+           <tr>
+            <td>Interpretation</td>
+            <td>Truthteller</td>
+            <td>Eroca Nicols</td>
+            <td>Toronto</td>
+            <td>2015</td>
+          </tr>
+           <tr>
+            <td>Interpretation</td>
+            <td>An Occasion hosted by</td>
+            <td>Isabel Lewis</td>
+            <td>Toronto</td>
+            <td>2015</td>
+          </tr>
+           <tr>
+            <td>Interpretation</td>
+            <td>M/Other + Dark Meaningless Touch</td>
+            <td>Banjamin Kamino</td>
+            <td>Montréal</td>
+            <td>2015</td>
+          </tr>
+           <tr>
+            <td>Interpretation</td>
+            <td>1976, Have Several</td>
+            <td>Dana Michel + Dancemakers</td>
+            <td>Toronto</td>
+            <td>2015</td>
+          </tr>
+           <tr>
+            <td>Interpretation</td>
+            <td>Recent Future</td>
+            <td>Zoja Smutny + Dancemakers</td>
+            <td>Toronto</td>
+            <td>2015</td>
+          </tr>
+           <tr>
+            <td>Interpretation</td>
+            <td>rehearsal/performance</td>
+            <td>Ame Henderson/Public Recordings</td>
+            <td>Toronto</td>
+            <td>2014</td>
+          </tr>
+            <tr>
+            <td>Interpretation</td>
+            <td>Monster, Angels, and Aliens are not a Substitute for Spirituality</td>
+            <td>Andrew Tay</td>
+            <td>Montréal</td>
+            <td>2014</td>
+          </tr>
+            <tr>
+            <td>Interpretation</td>
+            <td>The Weather in Times Square, Today</td>
+            <td>Adam Kinner</td>
+            <td>Montréal</td>
+            <td>2014</td>
+          </tr>
+            <tr>
+            <td>Interpretation</td>
+            <td>Around</td>
+            <td>Michael Trent + Dancemakers</td>
+            <td>Toronto</td>
+            <td>2014</td>
+          </tr>
+          <tr>
+            <td>Collaboration</td>
+            <td>What Is This Heart?</td>
+            <td>How to Dress Well + Simon Portigal + Brendan Fernandes</td>
+            <td>Berlin</td>
+            <td>2014</td>
+          </tr>
+               <tr>
+            <td>Choreography</td>
+            <td>ernsinpattersinpat, etc.</td>
+            <td>Simon Portigal</td>
+            <td>Montréal</td>
+            <td>2013</td>
+          </tr>
+            <tr>
+            <td>Collaboration + Interpretation</td>
+            <td>Dancemakers</td>
+            <td>rumschspringe</td>
+            <td>Toronto</td>
+            <td>2013</td>
+          </tr>
+            <tr>
+            <td>Interpretation</td>
+            <td>Night Shift</td>
+            <td>Michael Trent + Brendan Fernandes + Dancemakers</td>
+            <td>Toronto</td>
+            <td>2013</td>
+          </tr>
+            <tr>
+            <td>Interpretation</td>
+            <td>The Nature: Redux</td>
+            <td>Mårten Spångberg</td>
+            <td>Montréal</td>
+            <td>2013</td>
+          </tr>
+            <tr>
+            <td>Interpretation</td>
+            <td>Loveloss</td>
+            <td>Michael Trent + Dancemakers</td>
+            <td>Toronto</td>
+            <td>2013</td>
+          </tr>
+             <tr>
+            <td>Choreography</td>
+            <td>Landscape Dance: Homage to the Three Orders</td>
+            <td>Simon Portigal</td>
+            <td>Toronto</td>
+            <td>2013</td>
+          </tr>
+            <tr>
+            <td>Collaboration</td>
+            <td>Future Standards of Living</td>
+            <td>Simon Portigal + Védis Kjartansdóttir + Inga Huld Hàkonardòttir</td>
+            <td>Reykjavík</td>
+            <td>2013</td>
+          </tr>
+             <tr>
+            <td>Choreography</td>
+            <td>Sondage Générale 2011/General Survey 2011</td>
+            <td>Simon Portigal</td>
+            <td>Montréal</td>
+            <td>2011</td>
+          </tr>
+        
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-    <div class="main1A">
+  <section class="info">
+    <h2 class="info__heading sr-only" data-i18n="info">Info</h2>
 
-        <div class="main1header">
-                <a class="header_name" href="about.html">A. SIMON PORTIGAL</a>
-        </div>
-        <div class="home_target" id="home">
-            <div class="home_background">
-                <video autoplay loop muted poster="" id="tim_web_short"> <source src="images/TimThomSINV.mp4" type="video/mp4"></video>
-                <figcaption class="figcapLanding">Timothy Thomasson for "Studies in Virtuality (wip)", 2025
-                </figcaption>
-            </div>
-        </div>
-        </div>
-    </section>            
-</div>
+    <div id="info" class="info__bio">
+      <p data-i18n="info.bio1">I'm Simon Portigal, a Montréal-based contemporary dance artist with a research-based choreographic practice. My work adopts a dense, multifaceted structure shaped by my lived experience as a queer, first-generation child of the internet and "third culture kid" raised overseas, as well as my academic training in post-modern Western concert dance. Through these lenses, I investigate the body's entanglement with identity, borders, thresholds, movement, and digitality, drawing on references that range across 2SLGBTQIA+ and popular cultures, post-internet aesthetics, animation, reality television, cinema, and video games. I situate these influences within the broader choreographic histories and theoretical frameworks that shape my practice, asking how the body negotiates conflict, contradiction, and multiplicity — and how to move through the world at the intersection of cultural displacement, digital technology, and queerness.</p>
 
+      <p data-i18n="info.bio2">I have a concurrent web and graphic design practice under the name of <a class="is-featured" href="http://arthr.ca" target="_blank" rel="noopener noreferrer">arthr.ca</a></p>
+    </div>
+  </section>
 
-<script src="index.js"></script>
+  <section class="contact">
+    <h2 class="contact__heading sr-only" data-i18n="contact">Contact</h2>
+
+    <ul id="contact" class="contact__list">
+      <li><a href="https://instagram.com/asimonportigal" target="_blank" rel="noopener noreferrer">@asimonportigal</a></li>
+      <li><a href="https://instagram.com/arthr.ca" target="_blank" rel="noopener noreferrer">@arthr.ca</a></li>
+      <li><a href="mailto:simon.portigal@gmail.com">simon.portigal@gmail.com</a></li>
+      <li><a href="tel:+14388735714">+1(438)873-5714</a></li>
+    </ul>
+  </section>
+
+  <section class="support">
+    <h2 class="support__heading sr-only" data-i18n="support">Support</h2>
+
+    <p id="support" class="support__text" data-i18n="support.text">Support my ongoing projects, my choreographic practice, and help me to attain my financial goals as an artist <a class="is-featured" href="https://ko-fi.com/simonportigal" target="_blank" rel="noopener noreferrer">here</a>.</p>
+
+    <p class="support__copyright">&copy;2026 Simon Portigal</p>
+  </section>
+
+  <dialog id="fragile-modal" class="project-modal">
+    <div class="project-modal__scroll">
+      <button type="button" class="project-modal__close" aria-label="Close" data-i18n-aria="close">&times;</button>
+
+      <h3 class="project-modal__title">fragile &amp; useless</h3>
+      <p class="project-modal__year">(2023)</p>
+
+      <img class="project-modal__media" src="images/fragile/fragile-useless-still.png" alt="Still from fragile &amp; useless" />
+
+      <p class="project-modal__description" data-i18n="fragile.description">fragile &amp; useless imagines a contemporary folk dance made in and of the era of hyperdigitization.</p>
+
+      <div class="project-modal__credits">
+        <p data-i18n="fragile.credit1">Direction, Choreography, Sound Design: Simon Portigal</p>
+        <p data-i18n="fragile.credit2">Performance: Justin de Luna, Emile Pineault, Louise-Michel Jackson</p>
+        <p data-i18n="fragile.credit3">Light Design: Nien-Tzu Weng</p>
+        <p data-i18n="fragile.credit4">Digital Animation: Timothy Thomasson</p>
+        <p data-i18n="fragile.credit5">Outside-eye/Rehearsal Direction: Sasha Kleinplatz</p>
+        <p data-i18n="fragile.credit6">Stage Management: Michael Martini</p>
+        <p data-i18n="fragile.credit7">Choreographic Research: Hanako Hoshimi-Caines, Nathan Yaffe, Winnie Ho, Scott McCabe, Zoe Vos, Paige Culley, Justin de Luna, Sovann Prom Tep, Louise-Michel Jackson, Emile Pineault</p>
+        <p data-i18n="fragile.credit8">Thanks to Lara Oundjian, Sebastian Kann, Dana Gingras / The Stable, and LA SERRE - art vivants.</p>
+        <p data-i18n="fragile.credit9">Created with the support of Montréal, arts interculturels and La Chapelle Scènes Contemporaines</p>
+        <p data-i18n="fragile.credit10">Made possible by funds from the Canada Council for the Arts and le Conseil des Art et Lettres du Québec</p>
+      </div>
+
+      <ul class="project-modal__links">
+        <li><a href="https://www.youtube.com/watch?v=WKqTCOAo9kM" target="_blank">Youtube</a></li>
+        <li><a href="https://soundcloud.com/peepeegayboy/sets/fragile-useless" target="_blank">Soundcloud</a></li>
+        <li><a href="https://artichautmag.com/fragile-useless-mille-ardeurs-mille-accalmies/" target="_blank">Artichaut Magazine</a></li>
+      </ul>
+    </div>
+  </dialog>
+
+  <dialog id="limbic-modal" class="project-modal">
+    <div class="project-modal__scroll">
+      <button type="button" class="project-modal__close" aria-label="Close" data-i18n-aria="close">&times;</button>
+
+      <h3 class="project-modal__title">limbic cum rag</h3>
+      <p class="project-modal__year">(2015-2019)</p>
+
+      <img class="project-modal__media" src="images/limbic/limbic-cum-rag-still.png" alt="Still from limbic cum rag" />
+
+      <p class="project-modal__description" data-i18n="limbic.description">An iterative solo performance, limbic cum rag uses the green-screen as a conceptual framework to explore a performer's body as a site of projection - both literally and figuratively.</p>
+
+      <div class="project-modal__credits">
+        <p data-i18n="limbic.credit1">Direction, Choreography, Performance, Video, Sound Design: Simon Portigal</p>
+        <p data-i18n="limbic.credit2">Light Design: Tim Rodrigues, Hugo Dalphond</p>
+        <p data-i18n="limbic.credit3">Thanks to Ellen Furey, Dana Michel, Andrew Tay, Christopher Willes, Dancemakers, and the Third Floor Residency</p>
+        <p data-i18n="limbic.credit4">Created with the support of Montréal, arts interculturels</p>
+      </div>
+
+      <ul class="project-modal__links">
+        <li><a href="https://www.youtube.com/watch?v=qXybSw4zRIk" target="_blank">Youtube</a></li>
+      </ul>
+    </div>
+  </dialog>
+
+  <script src="index.js"></script>
 </body>
 </html>
