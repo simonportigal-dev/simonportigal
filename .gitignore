@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Video source/exports — hosted on Cloudflare R2, not in the repo
+*.mp4
+*.mov
+
+# Editor/tooling
+.vscode/

@@ -1,8 +1,46 @@
+function getModalVideo(dialog) {
+  var media = dialog.querySelector('.project-modal__media');
+  return media && media.tagName === 'VIDEO' ? media : null;
+}
+
+function syncMuteButton(dialog) {
+  var video = getModalVideo(dialog);
+  var btn = dialog.querySelector('[data-mute-toggle]');
+  if (!video || !btn) return;
+  btn.setAttribute('aria-pressed', String(video.muted));
+  btn.textContent = video.muted ? 'Unmute' : 'Mute';
+}
+
+function startModalVideo(dialog) {
+  var video = getModalVideo(dialog);
+  if (!video) return;
+  try { video.currentTime = 0; } catch (err) {}
+  // Try to autoplay with sound (allowed here because opening the modal is a
+  // user gesture); if the browser still blocks it, fall back to muted playback.
+  video.muted = false;
+  syncMuteButton(dialog);
+  var attempt = video.play();
+  if (attempt && typeof attempt.catch === 'function') {
+    attempt.catch(function () {
+      video.muted = true;
+      syncMuteButton(dialog);
+      video.play().catch(function () {});
+    });
+  }
+}
+
+function stopModalVideo(dialog) {
+  var video = getModalVideo(dialog);
+  if (video) video.pause();
+}
+
 document.querySelectorAll('[data-modal]').forEach(function (trigger) {
   trigger.addEventListener('click', function (event) {
     event.preventDefault();
     var dialog = document.getElementById(trigger.dataset.modal);
-    if (dialog) dialog.showModal();
+    if (!dialog) return;
+    dialog.showModal();
+    startModalVideo(dialog);
   });
 });
 
@@ -13,6 +51,20 @@ document.querySelectorAll('.project-modal').forEach(function (dialog) {
       dialog.close();
     });
   }
+
+  var muteBtn = dialog.querySelector('[data-mute-toggle]');
+  if (muteBtn) {
+    muteBtn.addEventListener('click', function () {
+      var video = getModalVideo(dialog);
+      if (!video) return;
+      video.muted = !video.muted;
+      syncMuteButton(dialog);
+    });
+  }
+
+  dialog.addEventListener('close', function () {
+    stopModalVideo(dialog);
+  });
 
   dialog.addEventListener('click', function (event) {
     var rect = dialog.getBoundingClientRect();

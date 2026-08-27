@@ -302,7 +302,7 @@ a:active {
   background: none;
   font-family: var(--font-nav);
   font-weight: 700;
-  font-size: 28px;
+  font-size: 16px;
   line-height: 1;
   color: var(--color-blue);
   cursor: pointer;
@@ -316,7 +316,7 @@ a:active {
   margin: 0;
   font-family: var(--font-nav);
   font-weight: 700;
-  font-size: 24px;
+  font-size: 16px;
   color: var(--color-blue);
 }
 
@@ -335,6 +335,36 @@ a:active {
   margin: 0 0 32px;
 }
 
+.project-modal__video {
+  position: relative;
+  margin: 0 0 32px;
+}
+
+.project-modal__video .project-modal__media {
+  margin: 0;
+}
+
+.project-modal__mute {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  margin: 0;
+  padding: 6px 12px;
+  border: none;
+  background: var(--color-blue);
+  font-family: var(--font-nav);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.project-modal__mute:hover {
+  background: var(--color-green);
+  color: var(--color-blue);
+}
+
 .project-modal__description {
   margin: 0 0 24px;
   font-family: var(--font-nav);
@@ -347,13 +377,13 @@ a:active {
 .project-modal__credits {
   font-family: "Google Sans Code";
   font-weight: 300;
-  /* font-style: italic; */
-  font-size: 12px;
+  font-style: italic;
+  font-size: 16px;
   color: var(--color-blue);
 }
 
 .project-modal__credits p {
-  margin: 0 0 1em;
+  margin: 0 0 .25em;
   line-height: normal;
 }
 

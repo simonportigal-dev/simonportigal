@@ -240,12 +240,12 @@
             <td>Montréal</td>
             <td>2017</td>
           </tr>
-          <tr>
-            <td>Choreography</td>
-            <td>Aattitle</td>
-            <td>Simon Portigal</td>
-            <td>Toronto</td>
-            <td>2016</td>
+       <tr class="is-featured">
+            <td><a href="#" data-modal="limbic-modal">Choreography</a></td>
+            <td><a href="#" data-modal="limbic-modal">limbic cum rag</a></td>
+            <td><a href="#" data-modal="limbic-modal">Simon Portigal</a></td>
+            <td><a href="#" data-modal="limbic-modal">Toronto</a></td>
+            <td><a href="#" data-modal="limbic-modal">2016</a></td>
           </tr>
            <td>Interpretation</td>
             <td>Lift That Up</td>
@@ -465,12 +465,15 @@
 
   <dialog id="fragile-modal" class="project-modal">
     <div class="project-modal__scroll">
-      <button type="button" class="project-modal__close" aria-label="Close" data-i18n-aria="close">&times;</button>
+      <button type="button" class="project-modal__close" aria-label="Close" data-i18n-aria="close">close</button>
 
       <h3 class="project-modal__title">fragile &amp; useless</h3>
-      <p class="project-modal__year">(2023)</p>
+      <p class="project-modal__year">(2022)</p>
 
-      <img class="project-modal__media" src="images/fragile/fragile-useless-still.png" alt="Still from fragile &amp; useless" />
+      <div class="project-modal__video">
+        <video class="project-modal__media" src="https://pub-a9d6452639844f098b7c1e4c3ef0eddd.r2.dev/fragile_web.mp4" loop playsinline preload="metadata" poster="images/fragile/fragile-useless-still.png" aria-label="Video from fragile &amp; useless"></video>
+        <button type="button" class="project-modal__mute" data-mute-toggle aria-pressed="false">Mute</button>
+      </div>
 
       <p class="project-modal__description" data-i18n="fragile.description">fragile &amp; useless imagines a contemporary folk dance made in and of the era of hyperdigitization.</p>
 
@@ -497,12 +500,15 @@
 
   <dialog id="limbic-modal" class="project-modal">
     <div class="project-modal__scroll">
-      <button type="button" class="project-modal__close" aria-label="Close" data-i18n-aria="close">&times;</button>
+      <button type="button" class="project-modal__close" aria-label="Close" data-i18n-aria="close">close</button>
 
       <h3 class="project-modal__title">limbic cum rag</h3>
       <p class="project-modal__year">(2015-2019)</p>
 
-      <img class="project-modal__media" src="images/limbic/limbic-cum-rag-still.png" alt="Still from limbic cum rag" />
+      <div class="project-modal__video">
+        <video class="project-modal__media" src="https://pub-a9d6452639844f098b7c1e4c3ef0eddd.r2.dev/limbic_web.mp4" loop playsinline preload="metadata" poster="images/limbic/limbic-cum-rag-still.png" aria-label="Video from limbic cum rag"></video>
+        <button type="button" class="project-modal__mute" data-mute-toggle aria-pressed="false">Mute</button>
+      </div>
 
       <p class="project-modal__description" data-i18n="limbic.description">An iterative solo performance, limbic cum rag uses the green-screen as a conceptual framework to explore a performer's body as a site of projection - both literally and figuratively.</p>
 
