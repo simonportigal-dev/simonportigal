@@ -492,3 +492,29 @@ a:active {
     margin: 1em 0em 0em 0em;
   }
 }
+
+/* Landscape phones: the viewport is too short for a full-width 16:9 video, so
+   the video overflows the modal and gets clipped by its border. Give the modal
+   a little more room and cap the video by height so it stays fully visible,
+   keeping its aspect ratio and centering it (the mute button rides along). */
+@media (orientation: landscape) and (max-height: 600px) {
+  .project-modal {
+    max-height: 94vh;
+  }
+
+  .project-modal__scroll {
+    padding: 20px;
+  }
+
+  .project-modal__video {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  .project-modal__video .project-modal__media {
+    width: auto;
+    max-width: 100%;
+    max-height: 85vh;
+  }
+}
