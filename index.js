@@ -8,7 +8,7 @@ function syncMuteButton(dialog) {
   var btn = dialog.querySelector('[data-mute-toggle]');
   if (!video || !btn) return;
   btn.setAttribute('aria-pressed', String(video.muted));
-  btn.textContent = video.muted ? 'Unmute' : 'Mute';
+  btn.textContent = video.muted ? 'unmute' : 'mute';
 }
 
 function startModalVideo(dialog) {
